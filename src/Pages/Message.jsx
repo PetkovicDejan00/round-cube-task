@@ -15,7 +15,6 @@ const Message = () => {
 
   const handleSubmit = async () => {
     setStatusText("sending");
-
     try {
       await axios.post("http://localhost:8800/messages", message);
       setStatusText("success");
